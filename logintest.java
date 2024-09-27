@@ -18,7 +18,7 @@ public class Third {
           
          //Maximize the browser  
           driver.manage().window().maximize();  
-          
+          driver.manage().timeout.ImplicitlyWait(5000, TimeUnit.Seconds);
           //Scroll down the webpage by 5000 pixels  
         JavascriptExecutor js = (JavascriptExecutor)driver;  
         js.executeScript("scrollBy(0, 5000)");   
